@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My 简历</title>
+  <style>
+	  /* common css */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font: 16px/1.5 "Microsoft YaHei";
+			color: #333;
+		}
+
+	  ul,
+	  li {
+		  list-style: none;
+	  }
+
+	  a {
+		  color: inherit;
+	  }
+	  
+	  .clearfix:after {
+		  content: "";
+		  display: block;
+		  clear: both;
+	  }
+	  /*common css end*/
+
+		/*page css */
+	  .container {
+			width: 1200px;
+			margin: 10px auto;
+		  padding: 120px 40px 40px;
+			background-color: #eee;
+		}
+
+		/* personal-info css */
+		.personal-info {
+			padding: 0 0 60px 30px;
+		}
+		.personal-info .name-area {
+			width: 50%;
+			float: left;
+		}
+	  .personal-info .name-area .avatar {
+		  position: relative;
+		  float: left;
+		  width: 200px;
+		  height: 200px;
+		  margin-right: 40px;
+		  background-color: #000;
+		  border-radius: 50%;
+		  color: #fff;
+		  font-size: 30px;
+	  }
+
+	  .personal-info .name-area .avatar:after {
+		  content: '';
+		  display: inline-block;
+		  width: 50%;
+		  height: 50%;
+		  border-top: 2px solid #fff;
+		  position: absolute;
+		  top: 48%;
+		  left: 36%;
+		  transform: rotate(-30deg);
+
+	  }
+
+	  .personal-info .name-area .avatar span:first-child {
+		  position: absolute;
+		  top: 25%;
+		  left: 25%;
+	  }
+
+	  .personal-info .name-area .avatar span:last-child {
+		  position: absolute;
+		  bottom: 25%;
+		  right: 25%;
+	  }
+
+	  .personal-info .name-area h2 {
+		  font-size: 30px;
+		  margin-top: 60px;
+	  }
+
+	  .personal-info .name-area p {
+		  font-size: 20px;
+		  font-weight: bold;
+	  }
+
+	  .personal-info .contact-area {
+		  width: 50%;
+		  float: left;
+	  }
+
+	  .personal-info .contact-area h3 {
+		  font-size: 24px;
+		  border-bottom: 2px solid #000;
+		  line-height: 2;
+		  margin-bottom: 10px;
+	  }
+
+	  .personal-info .contact-area li {
+		  font-size: 20px;
+		  line-height: 40px;
+	  }
+
+	  .personal-info .contact-area span {
+		  font-weight: bold;
+	  }
+	  /* personal-info end */
+
+	  /* main-info css */
+	  .main-info {
+		  padding-bottom: 40px;
+	  }
+
+	  .main-info>h2,
+	  .other-info h2 {
+		  font-size: 24px;
+		  line-height: 40px;
+		  border-bottom: 2px solid #ccc;
+		  margin-bottom: 30px;
+	  }
+
+	  .main-info ul {
+		  padding-left: 40px;
+		  margin-left: 10px;
+		  border-left: 2px solid #000;
+	  }
+
+	  .main-info h3 {
+		  font-size: 20px;
+		  display: inline-block;
+		  padding-bottom: 10px;
+		  position: relative;
+	  }
+
+	  .main-info h3 span {
+		  font-weight: normal;
+	  }
+
+	  .main-info h3:before {
+		  content: '';
+		  display: block;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 50%;
+		  background-color: #000;
+		  position: absolute;
+		  top: 10px;
+		  left: -46px;
+	  }
+
+	  .main-info p {
+		  padding-bottom: 20px;
+	  }
+	  /* main-info css end */
+
+	  /* ohters  css */
+		.other-info {
+			float: left;
+			width: 40%;
+			padding-right: 10%;
+		}
+
+		.other-info ul {
+			padding-left: 10px;
+			position: relative;
+		}
+
+	  .other-info li {
+		  display: block;
+		  padding: 10px 0 10px 40px;
+	  }
+
+	  .other-info li:before {
+		  content: '+';
+		  display: block;
+		  width: 20px;
+		  height: 20px;
+		  line-height: 20px;
+		  text-align: center;
+		  border: 1px solid #000;
+		  border-radius: 50%;
+		  float: left;
+		  position: absolute;
+		  left: 10px;
+	  }
+	  /* others css end */
+
+	  /* page css end */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="personal-info clearfix">
+	    <div class="name-area">
+		    <div class="avatar">
+			    <span>L</span>
+			    <span>J</span>
+		    </div>
+		    <h2>刘二男</h2>
+		    <p>Front-end Engineer</p>
+	    </div>
+	    <div class="contact-area">
+		    <h3>Contact</h3>
+		    <ul>
+			    <li><span>Phone: </span>18927427944</li>
+			    <li><span>E-mail: </span>223385538@qq.com</li>
+			    <!--click to show my QR code, and disappear when mouse moves away. not finished yet-->
+			    <li><span>Wechat: </span><a href="#">click to get QR code</a></li>
+			    <li><span>Address: </span>Nanshan District, Shenzhen, China.</li>
+		    </ul>
+	    </div>
+    </div>
+	  <div class="experience main-info clearfix">
+		  <h2>Project Experiences</h2>
+		  <ul>
+			  <li>
+				  <h3>Wee-life / <span>2015.05 - 2017.04</span></h3>
+				  <p>Front-end coding.Front-end coding.Front-end coding.Front-end coding.Front-end coding.Front-end coding.
+					  Front-end coding.Front-end coding.Front-end coding.Front-end coding.Front-end coding.Front-end coding.
+					  Front-end coding.Front-end coding.Front-end coding.</p>
+			  </li>
+			  <li>
+				  <h3>Longrise / <span>2014.04 - 2015.05</span></h3>
+				  <p>Front-end coding in Wuhan.Front-end coding in Wuhan.Front-end coding in Wuhan.Front-end coding in Wuhan.
+					  Front-end coding in Wuhan.Front-end coding in Wuhan.Front-end coding in Wuhan.Front-end coding in Wuhan.
+					  Front-end coding in Wuhan.Front-end coding in Wuhan.Front-end coding in Wuhan.</p>
+			  </li>
+			  <li>
+				  <h3>Github / <span><a href="#">www.github.com/xxx</a></span></h3>
+				  <p>Project for graduation.Project for graduation.Project for graduation.Project for graduation.Project for graduation.
+					  Project for graduation.Project for graduation.Project for graduation.Project for graduation.Project for graduation.
+					  Project for graduation.Project for graduation.</p>
+			  </li>
+		  </ul>
+	  </div>
+	  <div class="education main-info clearfix">
+		  <h2>Education Experiences</h2>
+		  <ul>
+			  <li>
+				  <h3>Software Engineering / Bachor / Hubei University / <span>2010.09 - 2014.06</span></h3>
+				  <p>Main degree in college.</p>
+			  </li>
+			  <li>
+				  <h3>Psychology / Bachor / Hubei University / <span>2011.09 - 2014.06</span></h3>
+				  <p>2nd degree in college.</p>
+			  </li>
+		  </ul>
+	  </div>
+	  <div class="others clearfix">
+		  <div class="skill other-info">
+			  <h2>Professional Skills</h2>
+			  <ul>
+				  <li>HTML</li>
+				  <li>CSS</li>
+				  <li>Javascript</li>
+				  <li>Ajax</li>
+				  <li>Bootstrap</li>
+				  <li>Node.js</li>
+			  </ul>
+		  </div>
+		  <div class="activity other-info">
+			  <h2>Other Experiences</h2>
+			  <ul>
+				  <li>look here.look here.look here.look here.look here.look here.look here.look here.</li>
+				  <li>do what.do what.do what.do what.do what.do what.do what.do what.do what.do what.do what.do what.</li>
+				  <li>some interesting experiences.some interesting experiences.some interesting experiences.
+					  some interesting experiences.some interesting experiences.some interesting experiences.</li>
+			  </ul>
+		  </div>
+	  </div>
+  </div>
+</body>
+</html>
